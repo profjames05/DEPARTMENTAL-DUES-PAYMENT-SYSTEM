@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UENR Login | Departmental Dues Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="login" class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-card wide">
+        <div class="brand brand-centered">
+          <div class="brand-mark">U</div>
+          <div>
+            <strong>UENR Departmental Dues</strong>
+            <small>Management System</small>
+          </div>
+        </div>
+
+        <div class="card-head">
+          <span class="eyebrow">Demo authentication</span>
+          <h1>Sign in to your portal</h1>
+        </div>
+
+        <div class="role-selector" aria-label="Role selection">
+          <button type="button" class="role-card active" data-role-button="student">Student Login</button>
+          <button type="button" class="role-card" data-role-button="treasurer">Treasurer Login</button>
+          <button type="button" class="role-card" data-role-button="admin">Administrator Login</button>
+        </div>
+
+        <form id="loginForm" class="form-grid" novalidate>
+          <input type="hidden" id="loginRole" value="student" />
+
+          <div class="field">
+            <label for="loginEmail">Email / Student ID / Staff ID</label>
+            <input id="loginEmail" name="identifier" type="text" placeholder="student@uenr.edu.gh" required />
+          </div>
+
+          <div class="field">
+            <label for="loginPassword">Password</label>
+            <div class="password-field">
+              <input id="loginPassword" name="password" type="password" placeholder="Enter password" required />
+              <button type="button" class="toggle-password" data-toggle="loginPassword">Show</button>
+            </div>
+          </div>
+
+          <div class="form-row split-line">
+            <label class="check-inline">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a href="forgot-password.html" class="link-plain">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="loginButton">
+            <span class="button-text">Sign in</span>
+          </button>
+        </form>
+
+        <div class="auth-meta">
+          <p><span id="createAccountPrompt">New student?</span> <a id="createAccountLink" href="register.html?role=student">Create account</a></p>
+          <p class="demo-note">Demo accounts: student@uenr.edu.gh, treasurer@uenr.edu.gh, admin@uenr.edu.gh</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer auth-footer">
+      <div class="container footer-wrap">
+        <p>ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

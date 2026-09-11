@@ -1,0 +1,26 @@
+/* Responsive utilities and layout adjustments for multi-device support */
+html, body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .site-header .nav-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 52px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

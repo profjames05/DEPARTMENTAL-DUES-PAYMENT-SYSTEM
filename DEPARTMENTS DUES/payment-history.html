@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment History</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="payment-history">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand brand-centered">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Portal</strong>
+            <small>Student</small>
+          </div>
+        </div>
+        <nav>
+          <a href="student-dashboard.html">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="dues.html">Dues</a>
+          <a href="payment.html">Payment</a>
+          <a href="payment-history.html" class="active">History</a>
+          <a href="receipt.html">Receipt</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="complaints.html">Complaints</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow">Finance history</span>
+            <h1>Payment history</h1>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Reference</th>
+                  <th>Dues</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Method</th>
+                  <th>Date</th>
+                  <th>Receipt</th>
+                </tr>
+              </thead>
+              <tbody id="paymentHistoryTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.dashboard-shell {
+  background: linear-gradient(180deg, #f8fbf9, #eef7f0);
+}
+
+.dashboard-main .card,
+.dashboard-main .table-card,
+.dashboard-main .metric-card {
+  border-radius: 18px;
+}
+
+.auth-footer {
+  margin-top: 18px;
+}

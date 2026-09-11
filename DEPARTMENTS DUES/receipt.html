@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Receipt</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="receipt">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand brand-centered">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Portal</strong>
+            <small>Student</small>
+          </div>
+        </div>
+        <nav>
+          <a href="student-dashboard.html">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="dues.html">Dues</a>
+          <a href="payment.html">Payment</a>
+          <a href="payment-history.html">History</a>
+          <a href="receipt.html" class="active">Receipt</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="complaints.html">Complaints</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow">Receipt</span>
+            <h1>Electronic receipt</h1>
+          </div>
+        </div>
+
+        <div id="receiptContainer" class="card"></div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
