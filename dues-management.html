@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dues Management</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="dues-management">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand brand-centered">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Portal</strong>
+            <small>Admin</small>
+          </div>
+        </div>
+        <nav>
+          <a href="administrator-dashboard.html">Dashboard</a>
+          <a href="departments.html">Departments</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="users.html">Users</a>
+          <a href="dues-management.html" class="active">Dues</a>
+          <a href="reports.html">Reports</a>
+          <a href="settings.html">Settings</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow">Finance setup</span>
+            <h1>Dues management</h1>
+          </div>
+        </div>
+
+        <div class="card" data-admin-only>
+          <h3>Create a new due</h3>
+          <form id="dueForm" class="form-grid">
+            <div class="field">
+              <label for="dueTitle">Title</label>
+              <input id="dueTitle" type="text" placeholder="e.g. Departmental Dues" required />
+            </div>
+            <div class="field">
+              <label for="dueAmount">Amount (GHS)</label>
+              <input id="dueAmount" type="number" min="1" step="0.01" required />
+            </div>
+            <div class="field full-width">
+              <label for="dueDescription">Description</label>
+              <textarea id="dueDescription" placeholder="What this due covers"></textarea>
+            </div>
+            <div class="field">
+              <label for="dueCategory">Category</label>
+              <select id="dueCategory"></select>
+            </div>
+            <div class="field">
+              <label for="dueDate">Due date</label>
+              <input id="dueDate" type="date" />
+            </div>
+            <div class="field">
+              <label for="dueCampus">Campus</label>
+              <select id="dueCampus"></select>
+            </div>
+            <div class="field">
+              <label for="dueSchool">School</label>
+              <select id="dueSchool"></select>
+            </div>
+            <div class="field">
+              <label for="dueDepartment">Department</label>
+              <select id="dueDepartment"></select>
+            </div>
+            <div class="field">
+              <label for="dueProgramme">Programme</label>
+              <select id="dueProgramme"></select>
+            </div>
+            <div class="field">
+              <label for="dueLevel">Academic level</label>
+              <select id="dueLevel"></select>
+            </div>
+            <div class="field">
+              <label for="dueYear">Academic year</label>
+              <select id="dueYear"></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create due</button>
+          </form>
+        </div>
+
+        <div class="card" style="margin-top: 24px;">
+          <h3>Dues catalogue</h3>
+          <div id="adminDuesList" class="list-stack"></div>
+        </div>
+
+        <div class="table-card" style="margin-top: 24px;">
+          <h3>Pending payment verification</h3>
+          <div id="pendingPaymentsList" class="list-stack"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasurer Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="treasurer-dashboard">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand brand-centered">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Portal</strong>
+            <small>Treasurer</small>
+          </div>
+        </div>
+        <nav>
+          <a href="treasurer-dashboard.html" class="active">Dashboard</a>
+          <a href="reports.html">Reports</a>
+          <a href="dues-management.html">Dues</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow">Treasurer operations</span>
+            <h1>Finance dashboard</h1>
+          </div>
+        </div>
+
+        <div data-treasurer-summary class="metric-grid"></div>
+
+        <div class="table-card">
+          <div class="status-row">
+            <h3>Payments awaiting verification</h3>
+            <a class="link-plain" href="dues-management.html">Review all</a>
+          </div>
+          <div data-treasurer-pending class="list-stack"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

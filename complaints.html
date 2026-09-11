@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaints</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="complaints">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand brand-centered">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Portal</strong>
+            <small>Student</small>
+          </div>
+        </div>
+        <nav>
+          <a href="student-dashboard.html">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="dues.html">Dues</a>
+          <a href="payment.html">Payment</a>
+          <a href="payment-history.html">History</a>
+          <a href="receipt.html">Receipt</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="complaints.html" class="active">Complaints</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow">Support</span>
+            <h1>Payment complaint</h1>
+          </div>
+        </div>
+
+        <div class="card">
+          <form id="complaintForm" class="form-grid">
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" placeholder="Payment verification issue" required />
+            </div>
+
+            <div class="field">
+              <label for="paymentReference">Payment reference</label>
+              <input id="paymentReference" type="text" placeholder="DD-REF-1234" required />
+            </div>
+
+            <div class="field full-width">
+              <label for="description">Description</label>
+              <textarea id="description" required placeholder="Explain the issue, including payment method and amount."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit complaint</button>
+          </form>
+        </div>
+
+        <div class="table-card" style="margin-top: 24px;">
+          <h3>Your complaint history</h3>
+          <div id="complaintHistory" class="list-stack"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

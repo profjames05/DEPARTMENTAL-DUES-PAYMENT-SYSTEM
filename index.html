@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departmental Dues Payment Management</title>
+    <meta
+      name="description"
+      content="Secure departmental dues payment portal for students, treasurers, and administrators."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-mark">DD</div>
+          <div>
+            <strong>Departmental Dues</strong>
+            <small>Management Portal</small>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-home">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">University Departmental Finance</span>
+            <h1>Track, verify, and pay departmental dues with confidence.</h1>
+            <p>
+              A professional platform for students, treasurers, and administrators to
+              manage financial obligations, verify payments, issue receipts, and generate
+              reports in an organized academic structure.
+            </p>
+            <div class="hero-actions">
+              <a href="login.html" class="btn btn-primary">Login</a>
+            </div>
+            <ul class="feature-list compact">
+              <li>Demo payment flow</li>
+              <li>Role-based access</li>
+              <li>Secure verification model</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="mini-card success">
+              <p>Collected this term</p>
+              <h3>GHS 48,200</h3>
+              <span>Across departments</span>
+            </div>
+            <div class="mini-card">
+              <p>Pending verification</p>
+              <h3>12 payments</h3>
+              <span>Awaiting review</span>
+            </div>
+            <div class="mini-card">
+              <p>Outstanding balance</p>
+              <h3>GHS 16,780</h3>
+              <span>Students with dues</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Platform Highlights</span>
+            <h2>Built for departments, students, and finance officers</h2>
+          </div>
+          <div class="card-grid three">
+            <article class="info-card">
+              <h3>Student Self-Service</h3>
+              <p>Students can view dues, track payment deadlines, and access receipts from one secure portal.</p>
+            </article>
+            <article class="info-card">
+              <h3>Verification Workflow</h3>
+              <p>Payments are not treated as successful until verification is complete by the treasurer or backend service.</p>
+            </article>
+            <article class="info-card">
+              <h3>Departmental Reporting</h3>
+              <p>Reports are grouped by department, programme, level, status, and date for strategic oversight.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Demo Mode</span>
+            <h2>Honest transaction handling</h2>
+          </div>
+          <div class="demo-alert">
+            <strong>DEMO MODE:</strong> This prototype simulates payment verification and email delivery. It is not connected to a live payment gateway or email provider.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Ready for real deployment</span>
+            <h2>What the live system requires</h2>
+          </div>
+          <div class="card-grid four">
+            <article class="info-card small">
+              <h4>Secure backend</h4>
+              <p>Authentication, database logic, and payment verification should run in a protected backend service.</p>
+            </article>
+            <article class="info-card small">
+              <h4>Payment gateway</h4>
+              <p>Use an approved provider with secure callbacks and verification endpoints.</p>
+            </article>
+            <article class="info-card small">
+              <h4>Email service</h4>
+              <p>Connect an approved transactional email provider for confirmations and receipts.</p>
+            </article>
+            <article class="info-card small">
+              <h4>Production database</h4>
+              <p>Store persistent records in a secure database with audit logs and access control.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

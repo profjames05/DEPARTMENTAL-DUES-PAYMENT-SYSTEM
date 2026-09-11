@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration | UENR Dues Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="register" class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-card wide">
+        <div class="brand brand-centered">
+          <div class="brand-mark">U</div>
+          <div>
+            <strong>UENR Departmental Dues</strong>
+            <small>Student registration</small>
+          </div>
+        </div>
+
+        <div class="card-head">
+          <span id="registerEyebrow" class="eyebrow">New student</span>
+          <h1 id="registerTitle">Create your account</h1>
+        </div>
+
+        <div class="role-selector" aria-label="Account type selection">
+          <button type="button" class="role-card active" data-register-role="student">Student</button>
+          <button type="button" class="role-card" data-register-role="treasurer">Treasurer</button>
+          <button type="button" class="role-card" data-register-role="admin">Administrator</button>
+        </div>
+
+        <form id="registerForm" class="form-grid two-col" novalidate>
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" type="text" placeholder="Jane Doe" required />
+          </div>
+
+          <div class="field" id="studentIdField">
+            <label for="studentId">Student ID</label>
+            <input id="studentId" type="text" placeholder="UE2026001" />
+          </div>
+
+          <div class="field" id="staffIdField" style="display:none;">
+            <label for="staffId">Staff ID</label>
+            <input id="staffId" type="text" placeholder="TR-001 or ADM-001" />
+          </div>
+
+          <div class="field">
+            <label for="studentEmail">Email address</label>
+            <input id="studentEmail" type="email" placeholder="student@uenr.edu.gh" required />
+          </div>
+
+          <div class="field">
+            <label for="phoneNumber">Phone number</label>
+            <input id="phoneNumber" type="tel" placeholder="+233 24 000 0000" required />
+          </div>
+
+          <div class="field">
+            <label for="profilePicture">Profile picture</label>
+            <input id="profilePicture" type="file" accept="image/*" />
+          </div>
+
+          <div class="field" id="campusField">
+            <label for="campusSelect">Campus</label>
+            <select id="campusSelect" required>
+              <option value="">Select campus</option>
+            </select>
+          </div>
+
+          <div class="field" id="schoolField">
+            <label for="schoolSelect">School</label>
+            <select id="schoolSelect" disabled required>
+              <option value="">Select school</option>
+            </select>
+          </div>
+
+          <div class="field" id="departmentField">
+            <label for="departmentSelect">Department</label>
+            <select id="departmentSelect" disabled required>
+              <option value="">Select department</option>
+            </select>
+          </div>
+
+          <div class="field" id="programmeField">
+            <label for="programmeSelect">Programme</label>
+            <select id="programmeSelect" disabled required>
+              <option value="">Select programme</option>
+            </select>
+          </div>
+
+          <div class="field" id="academicLevelField">
+            <label for="academicLevel">Academic level</label>
+            <select id="academicLevel" required>
+              <option value="">Select level</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="300">300</option>
+              <option value="400">400</option>
+              <option value="500">500</option>
+              <option value="600">600</option>
+            </select>
+          </div>
+
+          <div class="field" id="academicYearField">
+            <label for="academicYear">Academic year</label>
+            <select id="academicYear" required>
+              <option value="">Select year</option>
+              <option value="2024/2025">2024/2025</option>
+              <option value="2025/2026">2025/2026</option>
+              <option value="2026/2027">2026/2027</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="registerPassword">Password</label>
+            <div class="password-field">
+              <input id="registerPassword" type="password" placeholder="Create a strong password" required />
+              <button type="button" class="toggle-password" data-toggle="registerPassword">Show</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="registerConfirmPassword">Confirm password</label>
+            <div class="password-field">
+              <input id="registerConfirmPassword" type="password" placeholder="Repeat password" required />
+              <button type="button" class="toggle-password" data-toggle="registerConfirmPassword">Show</button>
+            </div>
+          </div>
+
+          <label class="check-inline full-width">
+            <input id="acceptTerms" type="checkbox" />
+            <span>I accept the terms and conditions.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block full-width">Create account</button>
+        </form>
+
+        <div class="auth-meta">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer auth-footer">
+      <div class="container footer-wrap">
+        <p>ProfJames 2026</p>
+      </div>
+    </footer>
+
+    <script src="js/uenr-academic-structure.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
